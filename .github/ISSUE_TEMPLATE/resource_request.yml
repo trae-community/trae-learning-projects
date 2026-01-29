@@ -1,0 +1,65 @@
+name: 📚 资源推荐 / 新增
+description: 推荐一个学习资源、课程、文章、工具、项目
+title: "[资源] "
+labels: ["resource", "triage"]
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: 资源类型
+      options:
+        - 文档 / 指南
+        - 课程 / 视频
+        - 书籍 / 章节
+        - 示例项目 / Demo
+        - 工具 / 网站
+        - 论文 / 报告
+        - 其他
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: 资源链接（必填）
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 一句话推荐理由（必填）
+      description: 这资源解决什么问题？适合谁？
+      placeholder: 例如：5 分钟讲清楚 XXX，适合零基础入门...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: level
+    attributes:
+      label: 适合水平
+      options:
+        - 零基础
+        - 入门
+        - 进阶
+        - 高阶
+    validations:
+      required: true
+
+  - type: textarea
+    id: outline
+    attributes:
+      label: 建议放到仓库哪个位置？
+      description: 例如：docs/xxx、courses/xxx、projects/xxx
+      placeholder: 我建议放到...
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 备注（可选）
+      description: 是否有版权/付费说明？是否需要科学上网？
+    validations:
+      required: false
