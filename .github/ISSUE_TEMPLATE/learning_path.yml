@@ -1,0 +1,47 @@
+name: 🗺️ 学习路线 / 专题建议
+description: 提出一个你希望仓库补齐的学习路线或专题合集
+title: "[路线] "
+labels: ["learning-path", "enhancement"]
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: 主题（必填）
+      placeholder: 例如：从 0 到 1 学会 Docker / 从 0 写一个 AI Agent CLI
+    validations:
+      required: true
+
+  - type: dropdown
+    id: audience
+    attributes:
+      label: 面向人群
+      options:
+        - 零基础（完全新手）
+        - 转行/入门（能写点代码）
+        - 有经验开发者（想系统化）
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: 学完要达到什么效果？（必填）
+      placeholder: 例如：能本地跑起来、能部署、能写出一个最小可用项目...
+    validations:
+      required: true
+
+  - type: textarea
+    id: outline
+    attributes:
+      label: 你希望路线包含哪些章节？（可选）
+      placeholder: 1) ... 2) ... 3) ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: 你参考的资料/链接（可选）
+    validations:
+      required: false

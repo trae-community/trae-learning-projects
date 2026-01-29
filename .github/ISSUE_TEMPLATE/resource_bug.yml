@@ -1,0 +1,29 @@
+name: 🐛 资源错误 / 链接失效
+description: 链接打不开、内容过期、分类不对、描述有误等
+title: "[资源问题] "
+labels: ["bug", "resource"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: 出问题的资源位置（必填）
+      description: 指明在哪个文件/目录/页面（最好贴路径 + 行号）
+      placeholder: docs/xxx.md 第 12 行，或 projects/xxx/README.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题描述（必填）
+      placeholder: 链接 404 / 内容过期 / 标题不一致 / 分类不合适...
+    validations:
+      required: true
+
+  - type: textarea
+    id: fix
+    attributes:
+      label: 你建议怎么改（可选）
+      placeholder: 可替换链接、更新到新版本、改分类等
+    validations:
+      required: false
