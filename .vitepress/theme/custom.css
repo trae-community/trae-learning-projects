@@ -1,0 +1,128 @@
+:root {
+  --vp-c-brand-1: #0fdc78;
+  --vp-c-brand-2: #0cb863;
+  --vp-c-brand-3: #0a9450;
+  --vp-c-brand-soft: rgba(15, 220, 120, 0.14);
+  
+  --vibecoding-primary: #0fdc78;
+  --vibecoding-bg: #000000;
+  --vibecoding-glow: 0 0 20px rgba(15, 220, 120, 0.4);
+  --vibecoding-text-glow: 0 0 10px rgba(15, 220, 120, 0.6);
+}
+
+.dark {
+  --vp-c-bg: #000000;
+  --vp-c-bg-soft: #0a0a0a;
+  --vp-c-bg-mute: #111111;
+  --vp-c-text-1: #ffffff;
+  --vp-c-text-2: #a1a1a1;
+  --vp-home-hero-name-color: #0fdc78;
+  --vp-home-hero-name-background: transparent;
+}
+
+/* Custom Hero Styles */
+.VPHero {
+  background: radial-gradient(circle at 50% 50%, rgba(15, 220, 120, 0.05) 0%, transparent 80%);
+  position: relative;
+}
+
+/* Scanline effect */
+.VPHero::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.02), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.02));
+  z-index: 2;
+  background-size: 100% 4px, 3px 100%;
+  pointer-events: none;
+}
+
+.name {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  text-shadow: var(--vibecoding-text-glow);
+  letter-spacing: -0.04em;
+  font-weight: 900 !important;
+}
+
+.tagline {
+  font-family: 'Inter', sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+
+.VPButton.brand {
+  background-color: var(--vibecoding-primary) !important;
+  color: #000 !important;
+  font-weight: 700;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  box-shadow: var(--vibecoding-glow);
+  border: 1px solid var(--vibecoding-primary);
+  transition: all 0.3s ease;
+}
+
+.VPButton.brand:hover {
+  background-color: transparent !important;
+  color: var(--vibecoding-primary) !important;
+  box-shadow: 0 0 30px rgba(15, 220, 120, 0.8);
+  transform: translateY(-2px);
+}
+
+.VPButton.alt {
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  transition: all 0.3s ease;
+}
+
+.VPButton.alt:hover {
+  border-color: var(--vibecoding-primary);
+  color: var(--vibecoding-primary) !important;
+}
+
+/* Feature Cards - Matrix Style */
+.VPFeature {
+  background: rgba(10, 10, 10, 0.8) !important;
+  border: 1px solid rgba(15, 220, 120, 0.1) !important;
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.VPFeature:hover {
+  border-color: var(--vibecoding-primary) !important;
+  box-shadow: 0 0 20px rgba(15, 220, 120, 0.2);
+  transform: scale(1.02);
+}
+
+.VPFeature .icon {
+  background: rgba(15, 220, 120, 0.1) !important;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Custom Manifesto Section */
+.vibecoding-manifesto {
+  border: 1px solid rgba(15, 220, 120, 0.2);
+  background: linear-gradient(to bottom, #050505, #000000) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.vibecoding-manifesto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: var(--vibecoding-primary);
+  box-shadow: var(--vibecoding-glow);
+}
