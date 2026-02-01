@@ -5,7 +5,7 @@ export default defineConfig({
   base: '/trae-learning-projects/',
   title: "Trae Learning",
   description: "Vibecoding 进阶指南",
-  appearance: 'dark',
+  appearance: 'force-dark',
   cleanUrls: true,
   themeConfig: {
     logo: 'https://vitepress.dev/vitepress-logo-mini.png',
