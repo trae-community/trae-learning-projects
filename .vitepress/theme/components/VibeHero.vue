@@ -360,9 +360,9 @@ onUnmounted(() => {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 56px;
+  padding: 0 64px;
 }
 
 .badge {

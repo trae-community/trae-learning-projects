@@ -192,9 +192,9 @@ await pipeline(data);`
 /* ─── Root ─── */
 .features-root {
   position: relative;
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 100px 24px 60px;
+  padding: 100px 48px 60px;
 }
 
 /* ─── Light Bar ─── */
@@ -447,9 +447,9 @@ await pipeline(data);`
 
 /* ─── Manifesto ─── */
 .manifesto {
-  max-width: 750px;
+  max-width: 900px;
   margin: 60px auto 100px;
-  padding: 0 24px;
+  padding: 0 48px;
 }
 
 .manifesto-inner {
@@ -505,7 +505,7 @@ await pipeline(data);`
 }
 
 @media (max-width: 768px) {
-  .features-root { padding: 60px 20px 40px; }
+  .features-root { padding: 60px 24px 40px; }
   .heading { font-size: 1.75rem; }
   .section-header { margin-bottom: 48px; }
   .features-list { gap: 48px; }

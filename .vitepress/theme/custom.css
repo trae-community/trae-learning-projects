@@ -116,6 +116,34 @@ body {
 }
 
 /* ========================================
+   Homepage Full Width Layout
+   ======================================== */
+
+/* Remove max-width constraint on homepage */
+.VPHome .vp-doc.container,
+.VPHome .container,
+.VPContent.is-home .vp-doc.container,
+.VPContent.is-home .container {
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Make VPHome itself full width */
+.VPHome {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+/* The content wrapper inside VPHome */
+.VPHome > div,
+.VPHome .vp-doc {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* ========================================
    Global Typography
    ======================================== */
 
