@@ -41,7 +41,7 @@
       <blockquote>
         在 AI 时代，编程的门槛正在消失，而审美的价值正在凸显。Vibecoding 不仅仅是关于写代码，它是关于如何与智能伙伴共鸣，如何将模糊的直觉转化为精致的数字现实。
       </blockquote>
-      <div class="manifesto-author">— Trae Community</div>
+      <div class="manifesto-author">— TRAE Community</div>
     </div>
   </section>
 </template>
@@ -144,7 +144,7 @@ api.get("/users/:id", async (ctx) => {
   },
   {
     title: '极速反馈',
-    desc: '利用 Trae 的 AI 能力实现即时原型设计与代码迭代。从想法到实现，只需几分钟。',
+    desc: '利用 TRAE 的 AI 能力实现即时原型设计与代码迭代。从想法到实现，只需几分钟。',
     lang: 'prompt',
     code: `> 创建一个带有暗色主题的登录表单
 > 添加邮箱验证和密码强度检测
